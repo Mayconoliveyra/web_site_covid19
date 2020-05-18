@@ -1,1 +1,0 @@
-<h2>QUEM SOMOS</h2>

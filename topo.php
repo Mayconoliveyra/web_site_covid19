@@ -1,9 +1,4 @@
-<header class=page-header>
-	<center>
-		<h1 style="background-color: #efefef">
-			<img src="img/logo3.png">
-		</h1>
-	</center>
+
+	<img src="img/logo14.png " style=" width: 100%">
 
 	<?php include_once('menu.php'); ?>
-</header>

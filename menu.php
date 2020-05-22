@@ -1,55 +1,36 @@
-<html>
-<head>
-  <style>
-    pText1{
-        font: normal 14pt Segoe UI Semibold;
-        color:  rgb(211, 211, 235);
-    }
-
-    divMenu{
-       border: 2px solid rgba(255, 255, 255);   
-       background-color: rgb(18, 15, 26);
-       min-height: 35px;
-       text-align:  center;
-      
-      }
-
-  </style>
-
-</head>
-
-<body>
-    <!-- Menu -->
-    <div class="container-fluid">
+  <div class="container-fluid" style="background-color: rgba(203, 212, 205);">
     <div class ="row">
     
-      <divMenu class="col-2">
-        <a href="#O que é COVID-19"> <pText1>Covid-19</pText1> </a>
-      </divMenu>
-    
-      <divMenu class="col-2">
-        <a href="#Quais são os sintomas"> <pText1>Sitomas</pText1> </a>
-      </divMenu>
+      <divMenu01 class="col-2">
+      <a href="#O que é COVID-19"> <pMenu01>COVID-19</pMenu01> </a>
+      </divMenu01>
 
-      <divMenu class="col-2">
-        <a href="#Como é transmitido"> <pText1>Transmição</pText1> </a>
-      </divMenu>
+      <divMenu01 class="col-2">
+        <a href="#Quais são os sintomas"> <pMenu01>SITOMAS</pMenu01> </a>
+      </divMenu01>
 
-      <divMenu class="col-2">
-        <a href="#Diagnóstico"> <pText1>Diagnóstico</pText1> </a>
-      </divMenu>
+      <divMenu01 class="col-2">
+        <a href="#Como é transmitido"> <pMenu01>TRANSMISSÃO</pMenu01> </a>
+      </divMenu01>
 
-      <divMenu class="col-2">
-        <a href="#Como se proteger"> <pText1>Prevenção</pText1> </a>
-      </divMenu>
+      <divMenu01 class="col-2">
+        <a href="#Diagnóstico"> <pMenu01>DIAGNÓSTICO</pMenu01> </a>
+      </divMenu01>
 
-      <divMenu class="col-2">
-        <a href="?pg=memorial"> <pText1>Memorial</pText1> </a>
-      </divMenu>
+      <divMenu01 class="col-2">
+        <a href="#Como se proteger"> <pMenu01>PREVENÇÃO</pMenu01> </a>
+      </divMenu01>
+
+      <divMenu01 class="col-2">
+        <a href="?pg=memorial"> <pMenu01>MEMORIAL</pMenu01> </a>
+      </divMenu01>
 
     </div>
   </div>
-  <br> <br>
-</body>
-</html>
+ 
+
+ 
+ 
+
+
 

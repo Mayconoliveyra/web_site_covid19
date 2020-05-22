@@ -8,24 +8,16 @@
 	<link rel="stylesheet" type="text/css" 
           href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/novocss.css">
+	<link rel="stylesheet" href="estilos.css">
 
-	<style type="text/css">
-		divTopo{
-		border: 1px solid #000;   
-		min-height: 70px;
-		background-color: rgba(207, 7, 7, 0.685);
-		color: rgba(207, 7, 7, 0.685);
-		}
-	</style>
 </head>
-
 <body>
 	<?php
+	/* CHAMA PAG PRINCIPAL E MENU*/
 		include_once('topo.php');
+		include_once('menu.php'); 
 	?>		
 	
-	<div class='container'>
-
 		<?php
 		#área de conteúdo
 		if(empty($_SERVER["QUERY_STRING"])){
@@ -37,8 +29,6 @@
 		}
 		?>
 
-	</div>
-		
 	<?php
 		/* CHAMA PAG RODAPE*/
 		include_once('rodape.php');

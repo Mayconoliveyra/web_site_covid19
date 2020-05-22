@@ -1,14 +1,7 @@
+<link rel="stylesheet" href="estilos.css">
 
-<style>
- p01{
-  font: normal 26px "Bookman Old Style";
- }
- p02{
-  font: normal 23px "Bookman Old Style";
- }
-</style>
-
-<div class="container-fluid">
+<hr>
+<div class="container" style="background-color: rgba(1, 5, 32, 0.05);">
   <div class="row">
     <div class="col-7">
       <div class="panel-heading">
@@ -16,8 +9,10 @@
         <hr>
       </div>
     </div>
+
     <div class="col-1">
     </div>
+
     <div class="col-4">
       <div class="panel-heading">
         <h3 style="text-align: center">Última Atualização</h3> 
@@ -25,6 +20,7 @@
       </div>
     </div>
   </div>
+
   <div class="row">
     <div class="col-7">
       <p>   
@@ -111,23 +107,22 @@
     </div>
 
     <div class="col-4" style="border-style: double;  height: 360px;">
-    <center>
-    <p01>
-    Horário <br>
-    <p02>17/05/2020 20:25</p02>
-    <hr>
-    Confirmados <br>
-    <p02>241.080</p02> 
-    <hr>
-    Recuperados <br>
-    <p02>94.122</p02> 
-    <hr>
-    Mortos <br>
-    <p02>16.118</p02> 
-    </p01>
-    <center>
-    </div>
-          
+      <center>
+      <p01>
+      Horário <br>
+      <p02>17/05/2020 20:25</p02>
+      <hr>
+      Confirmados <br>
+      <p02>241.080</p02> 
+      <hr>
+      Recuperados <br>
+      <p02>94.122</p02> 
+      <hr>
+      Mortos <br>
+      <p02>16.118</p02> 
+      </p01>
+      <center>
+    </div>     
   </div>
 
 </div>

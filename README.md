@@ -9,11 +9,8 @@ O CONTEÚDO DESTE SITE NÃO E VERÍDICO.
 
 PROGRAMAS UTILIZADOS:
 
-  XAMPP v3.2.4 (APACHE, MYSQL)
-  
-  VISUAL STUDIO CODE (CSS, HTML, PHP)
-  
-  
+   versão do PHP: 7.3.12
+   Informação da versão: 4.9.5
   
   
   Site: https://websitecovid19.000webhostapp.com/

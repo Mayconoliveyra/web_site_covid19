@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="estilos.css">
 <style>
   p02{
     font: bold 32px Tahoma;

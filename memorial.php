@@ -1,114 +1,123 @@
+
 <style>
 p01{
-font: BOLD 35px Arial Black;
+font: normal 35px Segoe UI Black;
 color: rgb(255, 255, 255, 0.852);
-line-height: 70px;
+line-height: 80px;
+letter-spacing:25px
 }
 
 p02{
-font: BOLD 120px Impact;
-color: rgb(255, 255, 255);
-line-height: 100px;
+font: normal 165px Impact;
+color: rgb(255, 255, 255, 0.852);
+line-height: 155px;
 text-decoration: underline;
 }
 
 p03{
-font: BOLD 60px Arial Black;
+font: BOLD 65px Segoe UI Black;
 color: rgb(255, 255, 255, 0.852);
-line-height: 60px;
+line-height: 70px;
 }
 
 p04{
-font: bold 25px arial;
+font: bold 30px arial;
 color: rgb(70, 67, 67, 1.342);
 }
 
 p05{
-font:  normal 19px arial;
-color: rgb(179, 141, 17, 0.89);
+font:  normal 21px arial;
+color: rgb(136, 116, 4, 0.685);
 }
 
 p06{
 font:  normal 18px arial;
-color: rgb(179, 141, 17, 0.89);
+color: rgba(179, 141, 17, 0.90);
+}
+
+h5{
+    font: bold 20px arial;
+    letter-spacing:8px
+}
+
+h3{
+    font: bold 25px arial;
 }
 
 </style>
-
-
-<div class="container-fluind" style="background-color: rgba(42, 44, 42, 0.808); height: 450px">
+<a name="memorialMortes"></a>
+<div class="container-fluid" style="background-image: url('img/HOME-FUNDO.gif'); height: 730px;" >
     <div class="row">
         <div class="col-12">
-            <br><br><br><br>
-            <center>
-            <p02> 15000 </p02> 
-            <br>
-            <p01>  M O R T E S  </p01>
-            <br>
-            <p03> EM MEMORIA </p03>
-            </center>
+        <?php
+        include_once('voltarOuFechar.php');
+        ?>
+            <?php
+                $query= mysqli_query($conexao,'SELECT * FROM dados_covid ORDER BY id_dados_covid');
+                while($tabela= mysqli_fetch_array($query)){
+                $mortes= $tabela['mortes_dados'];
+            
+            ?>
+
+            <?php } ?>
+                <br><br><br><br><br><br>
+                <center>
+                <p02><?php echo $mortes ?></p02> 
+                <br>
+                <p01> MORTES </p01>
+                <br>
+                <p03> EM MEMORIA </p03>
+                </center>
         </div>
     </div>
 </div>
-<hr>
-<div class="container"> 
-    <br><br>
-    <center>
-    <p04>
-    Até agora, milhares de pessoas perderam suas famílias. 
-    <br>
-    São maridos, esposas, mães, pais, filhos, filhas e muito mais.
-    </p04>
+    <br><br><br><br><br><br>
+    <div class="container"> 
+        <?php
+        $query= mysqli_query($conexao, "SELECT * FROM conteudo_memorial");
+        while ($tabela= mysqli_fetch_array($query)) {
+         $conteudo1= $tabela['cont1_mem'];
+         $conteudo2= $tabela['cont2_mem'];
 
-    <br><br><br>
+        ?>
 
-    <p05>
-    Apresentamos este trabalho para lembrar os entes queridos de milhares de famílias <br>
-    e como eles promoveram o progresso social globalmente.
-    </p05>
-    </center>
-</div>
+        <?php } ?>
 
-<br><br><br><br><br>
+        <center>
+            <p04> <?php echo $conteudo1 ?> </p04>
+            <br><br><br><br>
+            <p05> <?php echo $conteudo2 ?> </p05>
+        </center>
+    </div>
 
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+            </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-        </div>
+            <div class="col-7">
+        
+            <?php
+                $query = mysqli_query($conexao, "SELECT * FROM memorial WHERE 1analise_2aceito=2");
+                // Litando valores retornados da tabela "paginas"
+                while($tabela = mysqli_fetch_array($query)){
+                    $nome= $tabela['nome_mem']. "&nbsp;";
+                    $sobrenome= $tabela['sobrenome_mem']. "<br>";
+                    $idade= $tabela['idade_mem'];
+                    $frase= $tabela['frase_mem']."<br> <br><br><br>"; 
+            ?>
+                <h3> <?php echo $nome. $sobrenome ?> </h3>
+                <h5> <?php echo $idade ?> anos </h5>
+                <p06> <?php echo $frase ?> </p06>
+            <?php } ?>
 
-        <div class="col-8">
-            <h3> Li Wenliang </h3>
-            <h5> 3 4  a n o s </h5>
-            <p06>
-            "Voltarei à linha de frente assim que me recuperar.
-             O coronavírus está se espalhando e não quero ser um desertor".
-            </p06>
-            <br><br><br><br><br>
-            <h3> Duan Zhengcheng </h3>
-            <h5> 8 6 a n o s </h5>
-            <p06>
-            "Na busca pela ciência, pode não haver resultados por 20 anos.
-             Mas não se pode ficar impaciente e desesperado por realizar. Temos de estabelecer uma meta e ser persistentes".
-            </p06>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>    
+    </div>
 
-            <br><br><br><br><br>
-            <h3> Yu Guanrong </h3>
-            <h5> 7 1  a n o s  </h5>
-            <p06>
-            "Eu não posso assistir uma vida escapar na minha frente."
-            </p06>
+    <!-- ICONE ADD HOMENAGEADO-->              
+    <a href="?pg=addMemoria"> <img src="img/menu.png " style="width: 60px; position: fixed; top: 560px; left: 1240px;"> </a>
 
-            <br><br><br><br><br>
-            <h3> Chen Ziqian </h3>
-            <h5> 6 5  a n o s  </h5>
-            <p06>
-            "Quando você abre meus momentos no WeChat, pode ler este poema como meu epitáfio."
-            </p06>
-
-        </div>
-
-        <div class="col-3">
-        </div>
-    </div>    
-</div>

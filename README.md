@@ -3,14 +3,14 @@ OLÁ, ESSE PROJETO SE TRATA DE UM SITE, QUE TEM COMO TEMA A COVID19.
 
 PROJETO DESENVOLVIDO APENAS PARA FINS ESTUDANTIL.
 
-O CONTEÚDO DESTE SITE NÃO E VERÍDICO.
 
 
 
 PROGRAMAS UTILIZADOS:
 
-   versão do PHP: 7.3.12
-   Informação da versão: 4.9.5
+   Versão do PHP: 7.3.12.
+   
+   Versão do phpMyAdmin : 4.9.5.
   
   
   Site: https://websitecovid19.000webhostapp.com/

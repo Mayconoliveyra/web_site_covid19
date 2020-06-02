@@ -9,11 +9,11 @@ O CONTEÚDO DESTE SITE NÃO E VERÍDICO.
 
 PROGRAMAS UTILIZADOS:
 
-  XAMPP v3.2.4 (APACHE)
+  XAMPP v3.2.4 (APACHE, MYSQL)
   
   VISUAL STUDIO CODE (CSS, HTML, PHP)
   
-  POSTGRESQL
+  
   
   
   Site: https://websitecovid19.000webhostapp.com/

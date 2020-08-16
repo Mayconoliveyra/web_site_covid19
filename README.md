@@ -10,7 +10,7 @@ PROGRAMAS UTILIZADOS:
    
    Versão do phpMyAdmin : 4.9.5.
    
-   (HTML, CSS, BOOTSTRAP)
+   "HTML, CSS, BOOTSTRAP"
   
   
   Site: https://websitecovid19.000webhostapp.com/

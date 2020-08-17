@@ -13,4 +13,4 @@ PROGRAMAS UTILIZADOS:
    "HTML, CSS, BOOTSTRAP"
   
   
-  Site: https://websitecovid19.000webhostapp.com/
+  Resultado: https://websitecovid19.000webhostapp.com/
